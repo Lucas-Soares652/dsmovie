@@ -35,4 +35,25 @@ public class MovieService {
 		
 		return dto;
 	}
+	
+	@Transactional
+	public Movie saveMovie(Movie newMovie) {
+		
+		Movie movie = repository.findByTitle(newMovie.getTitle());
+		
+		if(movie != null) {
+			
+			return null;
+		}
+		
+		movie = new Movie();
+		movie.setTitle(newMovie.getTitle());
+		movie.setImage(newMovie.getImage());
+		movie.setCount(0);
+		movie.setScore(0.00);
+		
+		movie = repository.saveAndFlush(movie);
+		
+		return movie;
+	}
 }

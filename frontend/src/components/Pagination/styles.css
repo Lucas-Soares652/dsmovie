@@ -21,7 +21,7 @@
     width: 40px;
     height: 40px;
     border-radius: 4px;
-    background-color: #fff;
+    background-color: white;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -34,7 +34,7 @@
 }
 
 .dsmovie-pagination-button:disabled {
-    border: 1px solid #c2c2c2;
+    border: 1px solid black;
     cursor: unset;
 }
 

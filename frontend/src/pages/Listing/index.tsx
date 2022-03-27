@@ -4,6 +4,7 @@ import Pagination from "components/Pagination";
 import { useEffect, useState } from "react";
 import { MoviePage } from "types/movie";
 import { BASE_URL } from "utils/requests";
+import Button from "components/Button";
 
 function Listing() {
 
@@ -50,7 +51,8 @@ function Listing() {
 
                 </div>
             </div>
-
+            
+            <Button />
         </>
     )
 }
