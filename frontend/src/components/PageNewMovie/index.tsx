@@ -34,11 +34,11 @@ function PageNewMovie() {
                 <form className="dsmovie-form" onSubmit={handleSubmit}>
                     <div className="form-group dsmovie-form-group">
                         <label htmlFor="title">Informe o nome do filme</label>
-                        <input type="title" className="form-control" id="title" />
+                        <input type="text" className="form-control" id="title" required/>
                     </div>
                     <div className="form-group dsmovie-form-group">
                         <label htmlFor="imagem">Informe a url de uma imagem para a capa do filme</label>
-                        <input type="imagem" className="form-control" id="imagem" />
+                        <input type="text" className="form-control" id="imagem" required/>
                     </div>
                     <div className="dsmovie-form-btn-container">
                         <button type="submit" className="btn btn-primary dsmovie-btn">Salvar</button>
